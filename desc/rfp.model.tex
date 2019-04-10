@@ -153,9 +153,6 @@ where \mg is the density of \mRNAg in the cell and \Ztheta is a partition functi
   \label{eq:defZtheta}
   \Ztheta = \sum_g \mg \left(\sum_i \pgi\right).
 \end{equation}
-<<<<<<< HEAD
-Equations (\ref{eq:defPgi}) and (\ref{eq:defZtheta}) indicate that our choices of time and volume units for \kappag and \mg are irrelevant and we can only estimate their values relative to one another.\\\\
-=======
 Equations (\ref{eq:defPgi}) and (\ref{eq:defZtheta}) indicate that our choices of time and volume units for \kappag and \mg are irrelevant and we can only estimate their values relative to one another.
 This is because our choice of time units for $\kappag$ and density for $m_g$ will rescale both \pgi and, thus $\Ygi$ and $Z$.
 One solution is to use the same approach in our other work and  scale time such that the average protein production rate across genes $E_g\left(\kappag \mg \sigmang\right) = 1$ where \sigmang is the probability a ribosome completes translation of the \ng codons in gene $g$.
@@ -165,16 +162,11 @@ An alternative would be to constrain $E_g\left(\kappag \mg\right) = 1$, i.e. ind
   However, this use of $\psi$ was not wholly consistent with how $\psi$ was defined in \selac where $\psi$ is the  target protein functionality production rate so we've changed our notation.
   }
   
->>>>>>> 8a3d709b2d90d51aa48816bfa2dcaac86ce9c4d7
 To simplfy calculations we can derive an expected value for $\Ztheta$ as,
 \begin{equation}
  \label{eq:defExpZtheta}
  E(\Ztheta) = E(\sum_g m_g \sum_i p_{g,i}) = \sum_g \kappag \mg  \sum_c n_{c,g} (\frac{\alpha_c}{\lambda_c})
 \end{equation}
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a3d709b2d90d51aa48816bfa2dcaac86ce9c4d7
 
 %We will do our best to avoid calculting \Ztheta directly and, instead, treat it as an unknown variable and attempt to sample from its posterior distribution.
 
@@ -412,3 +404,4 @@ Thus, we may find that you need scale all of your $\iotag$ values up or down by 
     %That is,  $\Ztheta = \sum_g \kappag \mg \left(\sum_i \pgi\right) $. & ? \\
     %\lambdagi & Poisson rate for observing footprint for codon at position $i$ of gene $g$ where $\lambdagi = \Ytotal \Pgi$.& \\  
     %\lambdagc & Poisson rate for observing footprint for codon of type $c$ of gene $g$. $\lambdagc = \Ytotal \sum_{i\in c} \Pgi = \Ytotal \ngc \lambdagc$ if $\wgi = \wgj = \wgc$.  & \\    %If $\wgc = \wgi = \wgj | \{i,j\} \in c$ and $\wgc \sim \text{Gamma}(\alphac, \lambdac)$, then & \\
+
